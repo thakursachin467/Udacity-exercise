@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>repl.it</title>
+      <link href="index.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <div class="content">
+      <div class='form-content'>
+      <div class='loader hide' id='loading'>Loading....</div>
+      <form id='form-signup'>
+            <div class="form-group">
+               <span>Full Name (Optional)</span> <input type="text" id="name" /> 
+            </div>
+            <div class="form-group">
+               <span>Email</span> <input type="text" id="email" /> 
+               <p id="email-text"></p>
+            </div>
+            <div class="form-group">
+               <span>Username</span> <input type="text" id="username" /> 
+               <p id="username-text"></p>
+            </div>
+            <div class="form-group">
+               <span>Password</span> 
+               <input type="password" id="password" /> 
+               <meter max="4"  id="password-meter"></meter>
+              <p id="text"></p>
+            </div>
+            <div class="form-group">
+                <input class='btn' type="submit" value="submit"/> 
+            </div>
+            
+         </form>
+      </div>
+         
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+      <script src="index.js"></script> 
+   </body>
+</html>
